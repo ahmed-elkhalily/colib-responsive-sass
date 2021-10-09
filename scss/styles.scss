@@ -1,0 +1,16 @@
+// system
+@import "./variables";
+@import "./mixins";
+
+@import "./root";
+@import "./global";
+// pages
+@import "./components/hero";
+@import "./components/features";
+@import "./components/interior";
+@import "./components/pricing";
+@import "./components/screens";
+@import "./components/testi";
+@import "./components/news";
+@import "./components/download";
+@import "./components/footer";

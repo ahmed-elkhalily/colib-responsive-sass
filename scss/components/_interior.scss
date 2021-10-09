@@ -1,0 +1,86 @@
+.interior1,
+.interior2 {
+	background-color: $bg-sec;
+	&__img {
+		flex-basis: 60%;
+		display: flex;
+		justify-content: center;
+
+		figure {
+			width: 100%;
+
+			img {
+				width: 90%;
+			}
+		}
+	}
+	&__content {
+		flex-basis: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		h2 {
+			font-size: 2.35rem;
+			margin-bottom: 10%;
+		}
+
+		p {
+			margin-bottom: 10%;
+		}
+		button.main-btn {
+			width: 36%;
+		}
+	}
+}
+.interior2 .d-flex {
+	flex-direction: row-reverse;
+}
+@include mobile-xs {
+	.interior1,
+	.interior2 {
+		.d-flex {
+			flex-direction: column;
+			margin-bottom: 2rem;
+		}
+		&__content {
+			margin-top: 2rem;
+		}
+		h2 {
+			font-size: 1.75rem;
+		}
+	}
+}
+
+@include mobile-sm {
+	.interior1 .d-flex,
+	.interior2 .d-flex {
+		flex-direction: column;
+	}
+}
+
+@include tablet {
+	.interior1,
+	.interior2 {
+		&__content {
+			flex-basis: 50%;
+		}
+		&__img {
+			flex-basis: 50%;
+		}
+	}
+	.interior1__content > h2,
+	.interior2__content > h2 {
+		font-size: 1.5rem;
+	}
+}
+
+// for the 3 screens
+@include to-tablet-lg {
+	.interior1,
+	.interior2 {
+		button.main-btn {
+			width: auto;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.screen {
+	&__items {
+		justify-content: space-between;
+	}
+	&__item {
+		flex-basis: 23%;
+		img {
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+}
+
+@include mobile-xs {
+	.screen {
+		&__items {
+			flex-direction: column;
+		}
+		&__item {
+			flex-basis: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}

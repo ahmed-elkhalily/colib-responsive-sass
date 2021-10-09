@@ -1,0 +1,70 @@
+.pricing {
+	background: $bg-sec;
+	&__tables {
+		justify-content: space-between;
+	}
+	&__table {
+		background: $bg-white;
+		flex-basis: 30%;
+		padding: 40px;
+		header {
+			justify-content: space-around;
+			align-items: center;
+			padding-bottom: 30px;
+			border-bottom: 2px solid #f9faff;
+			margin: 0 -40px;
+		}
+	}
+	&__title {
+		font-size: 1.35rem;
+		font-weight: 100;
+		h4 {
+			font-size: 1.35rem;
+			font-weight: 400;
+		}
+	}
+	&__price {
+		font-size: 2rem;
+		font-weight: 700;
+		color: $c-black;
+	}
+	&__list {
+		text-align: center;
+		li {
+			margin-bottom: 2rem;
+		}
+	}
+	&__btn {
+		display: block;
+		margin: 0 auto;
+		padding: 1rem 2rem;
+		border-radius: 7px;
+		border: 1px solid #8a8a8a;
+	}
+}
+
+@include to-mobile-sm {
+	.pricing {
+		&__tables {
+			flex-direction: column;
+		}
+		&__table {
+			flex-basis: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}
+@include tablet {
+	.pricing {
+		&__tables {
+			flex-wrap: wrap;
+		}
+		&__table {
+			flex-basis: 48%;
+			margin-bottom: 2rem;
+			&:last-of-type {
+				margin: 0 auto;
+			}
+		}
+	}
+}
