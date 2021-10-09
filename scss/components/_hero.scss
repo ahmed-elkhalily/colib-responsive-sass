@@ -73,6 +73,9 @@ $bg-url: "/assets/img/banner/home-banner.jpg";
 
 @include to-desktop-sm {
 	.hero {
+		.container {
+			position: static;
+		}
 		.nav {
 			&__menu {
 				flex-direction: column;
@@ -80,6 +83,7 @@ $bg-url: "/assets/img/banner/home-banner.jpg";
 				background-color: white;
 				position: absolute;
 				left: 100%;
+				top: 20%;
 				li {
 					color: #636363;
 					text-align: center;
@@ -90,10 +94,13 @@ $bg-url: "/assets/img/banner/home-banner.jpg";
 				}
 			}
 			.burger_btn {
-				display: block;
-				background-color: red;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				width: 25px;
+				height: 25px;
 				span {
-					width: 5px;
+					width: 100%;
 					height: 1px;
 					margin-bottom: 1px;
 					background-color: white;

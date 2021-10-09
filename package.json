@@ -8,6 +8,6 @@
 		"node-sass": "^6.0.1"
 	},
 	"scripts": {
-		"scss": "node-sass --watch scss -o css"
+		"scss": "node-sass --watch scss -o assets/css"
 	}
 }
