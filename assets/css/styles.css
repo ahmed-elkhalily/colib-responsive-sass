@@ -99,7 +99,7 @@ li {
     width: 100%; 
     background: transparent;
     box-shadow: none;
-    transition: 0.5 all;
+    transition: 0.5s all;
     }
   .hero .nav.fade-in {
         background: #ba44fe;
