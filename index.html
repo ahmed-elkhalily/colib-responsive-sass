@@ -520,5 +520,30 @@
 		</section>
 		<!-- End Main-footer -->
 		<script src="./assets/js/all.min.js"></script>
+		<script>
+			//use window.scrollY
+			var scrollpos = window.scrollY;
+			var header = document.getElementById("navbar");
+
+			function add_class_on_scroll() {
+			    header.classList.add("fade-in");
+			}
+
+			function remove_class_on_scroll() {
+			    header.classList.remove("fade-in");
+			}
+
+			window.addEventListener('scroll', function(){ 
+			    //Here you forgot to update the value
+			    scrollpos = window.scrollY;
+
+			    if(scrollpos > 30){
+				add_class_on_scroll();
+			    }
+			    else {
+				remove_class_on_scroll();
+			    }
+			});
+		</script>
 	</body>
 </html>
