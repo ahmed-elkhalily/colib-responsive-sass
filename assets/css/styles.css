@@ -96,7 +96,17 @@ li {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%; 
+    background: transparent;
+    box-shadow: none;
+    transition: 0.5 all;
+    }
+  .hero .nav.fade-in {
+        background: #ba44fe;
+        box-shadow: 0 0 20px 7px #7c7c7c;
+        position: fixed;
+        z-index: 99999;
+    }
     .hero .nav .container {
       justify-content: space-between; }
     .hero .nav__menu {
