@@ -79,7 +79,7 @@ li {
     padding: 0; } }
 
 .hero {
-  background: url("/assets/img/banner/home-banner.jpg") center center;
+  background: url("../img/banner/home-banner.jpg") center center;
   background-size: cover;
   height: 100vh; }
   .hero .container {
